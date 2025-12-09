@@ -20,6 +20,8 @@ This counter should increment every time the query is resolved.
 
 Instead, when navigating back to a previous query result, the counter does not increase, demonstrating that the query is being reused rather than re-fetched.
 
+https://github.com/user-attachments/assets/1b65c280-d62f-4841-b0b1-a6ab7bb94706
+
 ## 🧪 Starting the App
 
 To start the app, clone this repository and run:
@@ -30,3 +32,7 @@ pnpm run dev
 ```
 
 (from the root of the repository)
+
+
+
+
