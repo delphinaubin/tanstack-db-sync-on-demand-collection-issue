@@ -40,6 +40,9 @@ pnpm run dev
 
 (from the root of the repository)
 
+Or click on this code sandbox link :
+https://githubbox.com/delphinaubin/tanstack-db-sync-on-demand-collection-issue
+
 
 
 
