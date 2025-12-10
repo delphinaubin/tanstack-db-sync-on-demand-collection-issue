@@ -13,6 +13,13 @@ the expected behavior is that queries should always refetch when accessed, since
 
 However, what actually happens is that previous query results are reused instead of triggering a refetch.
 
+
+### 📌 Additional Note: staleTime Appears Ignored
+
+As part of this reproduction, I tested multiple staleTime values — including 0, very small values (e.g. 10, 50), and larger values (e.g. 5000). In all cases, the behavior remained the same: the query results were reused, and the query function was not executed again when returning to a previously accessed result.
+
+This suggests that the staleTime setting is not being applied at all for collections configured with syncMode: "on-demand".
+
 ## 🔍 How to Observe the Issue
 
 In this repository, we keep track of the number of times the queryFn is called.
